@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial CyberX | Global AI Security Infrastructure</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <div id="toast-container"></div>
+
+    <header id="navbar">
+        <div class="logo">Imperial<span>CyberX</span></div>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        <nav id="nav-menu">
+            <a href="#solutions">Solutions</a>
+            <a href="#flagship-tech">Flagship</a>
+            <a href="#telemetry">Telemetry</a>
+            <a href="#roi-calculator">ROI</a>
+            <a href="#global-soc">Infrastructure</a>
+            <a href="mailto:imperialcyberx@outlook.com?subject=EMERGENCY BREACH RESPONSE" class="nav-breach-btn">
+                <span class="breach-pulse"></span>ACTIVE BREACH RESPONSE
+            </a>
+            <a href="#contact" class="btn-nav-cta">Engage Command &rarr;</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="grid-overlay"></div>
+        <div class="hero-content reveal">
+            <div class="status-indicator">
+                <span class="pulse-dot"></span>
+                AI INFRASTRUCTURE ONLINE &nbsp;|&nbsp; THREATS NEUTRALIZED:&nbsp;
+                <span id="threat-counter" class="mono">8,492,103</span>
+            </div>
+            <h1>Autonomous Security for<br><span>Borderless Enterprises</span></h1>
+            <p class="hero-subtext">Deploying military-grade penetration testing, zero-trust architectures, and autonomous machine learning agents to neutralize multi-vector threats in real-time.</p>
+            <div class="hero-buttons">
+                <a href="#solutions" class="btn-primary">Deploy Defenses</a>
+                <a href="#flagship-tech" class="btn-secondary">View Core Tech</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><span class="mono stat-num">99.999%</span><span class="stat-label">Uptime SLA</span></div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat"><span class="mono stat-num">&lt;12ms</span><span class="stat-label">Threat Response</span></div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat"><span class="mono stat-num">3</span><span class="stat-label">Global SOC Nodes</span></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="compliance-banner">
+        <div class="compliance-track">
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>ISO/IEC 27001 Certified</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>SOC 2 Type II Compliant</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>GDPR Ready</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>HIPAA Compliant</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>Zero-Trust Architecture</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>AES-256 Encryption</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>NIST CSF Aligned</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>ISO/IEC 27001 Certified</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>SOC 2 Type II Compliant</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>GDPR Ready</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>HIPAA Compliant</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>Zero-Trust Architecture</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>AES-256 Encryption</span>
+            <span class="compliance-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="verified-icon"><path d="M3 11V6a3 3 0 0 1 3-3h5"/><path d="M21 13v5a3 3 0 0 1-3 3h-5"/><polyline points="8 12 11 15 17 8"/></svg>NIST CSF Aligned</span>
+        </div>
+    </div>
+
+    <section id="flagship-tech" class="signature-section reveal">
+        <div class="section-header">
+            <p class="section-eyebrow">PROPRIETARY TECHNOLOGY</p>
+            <h2 class="blink-text">FLAGSHIP <span>INNOVATIONS</span></h2>
+            <p class="section-subtext">Advanced Cognitive SIEM & Aerospace AI/ML Security Software Systems.</p>
+        </div>
+        <div class="signature-grid">
+            <div class="signature-card neon-purple">
+                <div class="sig-badge">CRITICAL RELEASE</div>
+                <h3>Cognitive SIEM & XDR</h3>
+                <p>Enterprise SIEM powered by proprietary deep learning models with native SOAR integration and UEBA behavioral baselining. Sub-12ms threat correlation at petabyte scale.</p>
+                <ul class="card-features">
+                    <li>Deep Learning threat correlation</li>
+                    <li>Native SOAR automation</li>
+                    <li>UEBA behavioral baselining</li>
+                </ul>
+                <a href="#" class="sig-btn purple-btn" onclick="downloadPDF(event, 'siem')">Download SIEM Whitepaper &rarr;</a>
+            </div>
+            <div class="signature-card neon-gold">
+                <div class="sig-badge gold-badge">AEROSPACE AI</div>
+                <h3>LEO Satellite Defense</h3>
+                <p>AI/ML powered software system engineered for Low Earth Orbit (LEO) constellations. Autonomous signal integrity monitoring and anti-spoofing for orbital assets.</p>
+                <ul class="card-features gold-features">
+                    <li>Edge-compute AI agents</li>
+                    <li>Digital Twin synchronization</li>
+                    <li>Anti-spoofing & jamming defense</li>
+                </ul>
+                <a href="#" class="sig-btn gold-btn" onclick="downloadPDF(event, 'leo')">Download Architecture PDF &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="telemetry" class="section-container reveal">
+        <div class="section-header">
+            <p class="section-eyebrow">REAL-TIME FEED</p>
+            <h2>Live Threat <span class="gradient-text">Telemetry</span></h2>
+            <p class="section-subtext">Autonomous defense actions executed across global nodes, streamed in real-time.</p>
+        </div>
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">imperial-cyberx@soc-main — threat-feed — bash</span>
+            </div>
+            <div class="terminal-body mono" id="terminal-output"></div>
+        </div>
+    </section>
+
+    <section id="solutions" class="alt-bg reveal">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-eyebrow">SERVICE OFFERINGS</p>
+                <h2>Enterprise <span class="gradient-text">Solutions</span></h2>
+                <p class="section-subtext">High-end vulnerability management and offensive security — built for critical infrastructure.</p>
+            </div>
+            <div class="interactive-grid">
+                <div class="interactive-card" onclick="openModal('modal-pentest')">
+                    <div class="card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                    <h3>Advanced Pentesting</h3>
+                    <p>Simulating sophisticated cyberattacks to breach perimeters before real adversaries can exploit vulnerabilities in your infrastructure.</p>
+                    <span class="card-action">Initialize Report +</span>
+                </div>
+                <div class="interactive-card" onclick="openModal('modal-cloud')">
+                    <div class="card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></div>
+                    <h3>Cloud & Zero-Trust</h3>
+                    <p>Hardening AWS/Azure/GCP workloads with IAM optimization, container security audits, and zero-trust network segmentation.</p>
+                    <span class="card-action">Initialize Report +</span>
+                </div>
+                <div class="interactive-card" onclick="openModal('modal-appsec')">
+                    <div class="card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                    <h3>Software Security</h3>
+                    <p>Integrating SAST/DAST pipelines into CI/CD for hardened application security from build to production release.</p>
+                    <span class="card-action">Initialize Report +</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roi-calculator" class="section-container reveal">
+        <div class="section-header">
+            <p class="section-eyebrow">FISCAL IMPACT</p>
+            <h2>Consolidation <span class="gradient-text">ROI</span></h2>
+            <p class="section-subtext">Analyze the fiscal impact of migrating to our unified agentic security infrastructure.</p>
+        </div>
+        <div class="roi-container">
+            <div class="roi-controls">
+                <h3>Configure Your Environment</h3>
+                <label class="slider-label">Nodes &amp; Endpoints</label>
+                <input type="range" min="500" max="50000" value="5000" step="500" class="slider" id="endpoint-slider">
+                <div class="slider-value mono" id="slider-output">5,000 Nodes</div>
+            </div>
+            <div class="roi-results">
+                <div class="roi-stat-box">
+                    <h4 class="mono">EST. ANNUAL SAVINGS</h4>
+                    <div class="roi-number" id="savings-output">$750,000</div>
+                    <p class="roi-note">vs. multi-vendor stack</p>
+                </div>
+                <div class="roi-stat-box roi-stat-featured">
+                    <h4 class="mono">THREAT DWELL TIME</h4>
+                    <div class="roi-dwell">12 <span>ms</span></div>
+                    <p class="roi-note">industry avg: 197 days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="global-soc" class="alt-bg reveal">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-eyebrow">LIVE STATUS</p>
+                <h2>Infrastructure <span class="gradient-text">Health</span></h2>
+                <p class="section-subtext">Real-time operational status of global Security Operations Centers.</p>
+            </div>
+            <div class="status-grid">
+                <div class="status-row">
+                    <div class="status-left"><span class="status-dot green-dot"></span><span>Aegis-LEO Telemetry Nodes</span></div>
+                    <span class="operational">● Operational</span>
+                </div>
+                <div class="status-row">
+                    <div class="status-left"><span class="status-dot green-dot"></span><span>Cognitive SIEM Neural Clusters</span></div>
+                    <span class="operational">● Operational</span>
+                </div>
+                <div class="status-row">
+                    <div class="status-left"><span class="status-dot green-dot"></span><span>NOA Autonomous Response Engine</span></div>
+                    <span class="operational">● Operational</span>
+                </div>
+                <div class="status-row">
+                    <div class="status-left"><span class="status-dot green-dot"></span><span>Global Threat Intelligence Feed</span></div>
+                    <span class="operational">● Operational</span>
+                </div>
+            </div>
+            <div class="status-footer mono">
+                All Systems Nominal &nbsp;|&nbsp; Distributed Uptime: 99.999% &nbsp;|&nbsp; Last checked: <span id="last-checked">--</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="command" class="section-container reveal">
+        <div class="section-header">
+            <p class="section-eyebrow">THE ECHELON</p>
+            <h2>Command <span class="gradient-text">Echelon</span></h2>
+            <p class="section-subtext">Engineering and strategic leadership driving global infrastructure.</p>
+        </div>
+        <div class="leadership-grid">
+            <div class="leader-card">
+                <div class="leader-avatar mono">CISO</div>
+                <h3>Director of Operations</h3>
+                <p>Specialist in zero-trust architecture and military-grade perimeter defense.</p>
+            </div>
+            <div class="leader-card leader-featured">
+                <div class="leader-avatar mono featured-avatar">AI</div>
+                <h3>Chief AI Architect</h3>
+                <p>Lead developer of the NOA autonomous engine and Aegis-LEO satellite defense framework.</p>
+            </div>
+            <div class="leader-card">
+                <div class="leader-avatar mono">RED</div>
+                <h3>Head of Offensive Ops</h3>
+                <p>Elite threat hunter and penetration testing lead across critical infrastructure.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal(event)">
+        <div id="modal-pentest" class="modal-content">
+            <span class="close-btn" onclick="closeAllModals()">×</span>
+            <div class="modal-badge">OFFENSIVE SECURITY</div>
+            <h3>Advanced Penetration Testing</h3>
+            <p>Full red-team simulations across web, network, and physical vectors. Our operators hold OSCP, CRTO, and GXPN certifications.</p>
+            <a href="#contact" class="btn-primary modal-cta" onclick="closeAllModals()">Schedule a Briefing &rarr;</a>
+        </div>
+        <div id="modal-cloud" class="modal-content">
+            <span class="close-btn" onclick="closeAllModals()">×</span>
+            <div class="modal-badge">CLOUD SECURITY</div>
+            <h3>Cloud &amp; Zero-Trust Architecture</h3>
+            <p>Comprehensive cloud hardening across AWS, Azure, and GCP with IAM audits, container security, and network microsegmentation.</p>
+            <a href="#contact" class="btn-primary modal-cta" onclick="closeAllModals()">Schedule a Briefing &rarr;</a>
+        </div>
+        <div id="modal-appsec" class="modal-content">
+            <span class="close-btn" onclick="closeAllModals()">×</span>
+            <div class="modal-badge">APP SECURITY</div>
+            <h3>Software Security &amp; DevSecOps</h3>
+            <p>SAST/DAST pipeline integration, secure code review, and shift-left security practices embedded directly into your CI/CD workflow.</p>
+            <a href="#contact" class="btn-primary modal-cta" onclick="closeAllModals()">Schedule a Briefing &rarr;</a>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">Imperial<span>CyberX</span></div>
+                <p>High-End AI/ML Security Solutions for critical enterprise and aerospace infrastructure.</p>
+                <p class="footer-hq mono">HQ: Bengaluru, India</p>
+                <p class="footer-tagline mono">INTEL. DEFEND. NEUTRALIZE.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Direct Line</h4>
+                <ul>
+                    <li>Bengaluru, Karnataka</li>
+                    <li><a href="mailto:imperialcyberx@outlook.com">imperialcyberx@outlook.com</a></li>
+                    <li><a href="mailto:imperialcyberx@outlook.com?subject=EMERGENCY BREACH RESPONSE" style="color: var(--red-alert);">Emergency Breach Line</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Responsible Disclosure</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Imperial Cyber X Pvt Ltd. All rights reserved.</p>
+            <p class="dev-tag">System Architecture by Aetheris Digital UK</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('nav-menu').classList.toggle('open');
+            document.getElementById('hamburger').classList.toggle('active');
+        });
+
+        let count = 8492103;
+        setInterval(() => {
+            count += Math.floor(Math.random() * 5) + 1;
+            const el = document.getElementById('threat-counter');
+            if (el) el.textContent = count.toLocaleString();
+        }, 2000);
+
+        const term = document.getElementById('terminal-output');
+        const tagColors = { '[SIEM]': '#00e5ff', '[AEGIS]': '#ffb703', '[NOA]': '#27c93f', '[IDS]': '#a78bfa' };
+        const actions = [
+            '[SIEM] Correlated APT-29 lateral movement pattern',
+            '[AEGIS] Deflected GPS jammer signal from unknown origin',
+            '[NOA] Blocked SQL injection attempt via WAF rule 4420',
+            '[IDS] Anomalous C2 beacon suppressed on port 443',
+            '[SIEM] UEBA alert: privilege escalation by svc_account_07',
+            '[NOA] Quarantined infected endpoint: 10.4.21.88',
+            '[AEGIS] Telemetry spoof attempt neutralized — LEO-Node-3',
+        ];
+        function addTermLine() {
+            if (!term) return;
+            const action = actions[Math.floor(Math.random() * actions.length)];
+            const tag = action.split(' ')[0];
+            const color = tagColors[tag] || '#e2e8f0';
+            const ip = `${Math.floor(Math.random()*223)+1}.${Math.floor(Math.random()*255)}.${Math.floor(Math.random()*255)}.${Math.floor(Math.random()*255)}`;
+            const line = document.createElement('div');
+            line.className = 'term-line';
+            line.innerHTML = `<span class="term-time">${new Date().toLocaleTimeString()}</span><span style="color:${color}">${action}</span><span class="term-ip">← ${ip}</span>`;
+            term.appendChild(line);
+            if (term.children.length > 9) term.removeChild(term.firstChild);
+        }
+        setInterval(addTermLine, 1400);
+
+        const slider = document.getElementById('endpoint-slider');
+        if (slider) {
+            slider.addEventListener('input', function () {
+                document.getElementById('slider-output').textContent = parseInt(this.value).toLocaleString() + ' Nodes';
+                document.getElementById('savings-output').textContent = '$' + (this.value * 150).toLocaleString();
+            });
+        }
+
+        const lc = document.getElementById('last-checked');
+        if (lc) lc.textContent = new Date().toLocaleTimeString();
+        setInterval(() => { if (lc) lc.textContent = new Date().toLocaleTimeString(); }, 30000);
+
+        function triggerToast(msg, type = 'info') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type} show`;
+            toast.textContent = msg;
+            container.appendChild(toast);
+            setTimeout(() => { toast.classList.remove('show'); setTimeout(() => toast.remove(), 400); }, 3200);
+        }
+
+        function downloadPDF(e, type) {
+            e.preventDefault();
+            const { jsPDF } = window.jspdf;
+            triggerToast('Authenticating secure data tunnel...', 'info');
+            setTimeout(() => { triggerToast('Compiling research documentation...', 'info'); }, 1000);
+            setTimeout(() => {
+                triggerToast('Rendering architecture diagrams...', 'info');
+                const doc = new jsPDF();
+                const PW = 210, PH = 297;
+                const today = new Date().toLocaleDateString('en-GB', { year:'numeric', month:'long', day:'numeric' });
+
+                function hline(y, r=180,g=180,b=180) { doc.setDrawColor(r,g,b); doc.line(20, y, PW-20, y); }
+                function box(x,y,w,h,fr,fg,fb,dr,dg,db) {
+                    doc.setFillColor(fr,fg,fb); doc.setDrawColor(dr,dg,db);
+                    doc.rect(x,y,w,h,'FD');
+                }
+                function label(text, x, y, size=8, bold=false, r=30,g=30,b=30) {
+                    doc.setFont('helvetica', bold?'bold':'normal');
+                    doc.setFontSize(size); doc.setTextColor(r,g,b);
+                    doc.text(text, x, y, {align:'center'});
+                }
+                function bodyText(lines, startY, indent=20, width=170) {
+                    doc.setFont('helvetica','normal'); doc.setFontSize(10); doc.setTextColor(40,40,40);
+                    const wrapped = doc.splitTextToSize(lines, width);
+                    doc.text(wrapped, indent, startY);
+                    return startY + wrapped.length * 5.2;
+                }
+                function sectionTitle(text, y) {
+                    doc.setFont('helvetica','bold'); doc.setFontSize(13); doc.setTextColor(30,30,80);
+                    doc.text(text, 20, y);
+                    doc.setDrawColor(92,77,255); doc.setLineWidth(0.6);
+                    doc.line(20, y+2, 20+doc.getTextWidth(text), y+2);
+                    doc.setLineWidth(0.2);
+                    return y + 10;
+                }
+                function subTitle(text, y) {
+                    doc.setFont('helvetica','bold'); doc.setFontSize(10.5); doc.setTextColor(60,60,120);
+                    doc.text(text, 20, y);
+                    return y + 7;
+                }
+                function pageFooter(pageNum, total) {
+                    doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor(140,140,140);
+                    hline(285, 200,200,200);
+                    doc.text('Imperial CyberX Pvt Ltd  |  CONFIDENTIAL — Internal Use Only', 20, 291);
+                    doc.text('Page ' + pageNum + ' of ' + total, PW-20, 291, {align:'right'});
+                }
+                function pageHeader(subtitle) {
+                    doc.setFillColor(15,15,40); doc.rect(0,0,PW,12,'F');
+                    doc.setFont('helvetica','bold'); doc.setFontSize(7.5); doc.setTextColor(0,229,255);
+                    doc.text('IMPERIAL CYBERX', 20, 8);
+                    doc.setTextColor(160,160,180); doc.setFont('helvetica','normal');
+                    doc.text(subtitle, PW-20, 8, {align:'right'});
+                }
+                function arrow(x1,y1,x2,y2) {
+                    doc.setDrawColor(100,100,180); doc.setLineWidth(0.4);
+                    doc.line(x1,y1,x2,y2);
+                    const angle = Math.atan2(y2-y1,x2-x1);
+                    const hs = 2.5;
+                    doc.line(x2,y2, x2-hs*Math.cos(angle-0.4), y2-hs*Math.sin(angle-0.4));
+                    doc.line(x2,y2, x2-hs*Math.cos(angle+0.4), y2-hs*Math.sin(angle+0.4));
+                    doc.setLineWidth(0.2);
+                }
+
+                if (type === 'siem') {
+                    // PAGE 1 COVER
+                    doc.setFillColor(8,8,20); doc.rect(0,0,PW,PH,'F');
+                    doc.setFillColor(92,77,255); doc.rect(0,0,PW,3,'F');
+                    doc.setFillColor(180,0,0); doc.rect(PW/2-30,16,60,10,'F');
+                    doc.setFont('helvetica','bold'); doc.setFontSize(7); doc.setTextColor(255,255,255);
+                    doc.text('CONFIDENTIAL — RESTRICTED', PW/2, 22.5, {align:'center'});
+                    doc.setFillColor(20,20,50); doc.rect(20,36,PW-40,30,'F');
+                    doc.setDrawColor(92,77,255); doc.rect(20,36,PW-40,30,'D');
+                    doc.setFont('helvetica','bold'); doc.setFontSize(22); doc.setTextColor(0,229,255);
+                    doc.text('IMPERIAL', 60, 56);
+                    doc.setTextColor(92,77,255); doc.text('CYBERX', 105, 56);
+                    doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor(160,160,200);
+                    doc.text('GLOBAL AI SECURITY INFRASTRUCTURE', PW/2, 63, {align:'center'});
+                    doc.setFont('helvetica','bold'); doc.setFontSize(18); doc.setTextColor(220,220,255);
+                    doc.text('COGNITIVE SIEM & XDR', PW/2, 90, {align:'center'});
+                    doc.setFontSize(15); doc.setTextColor(180,160,255);
+                    doc.text('ECOSYSTEM ARCHITECTURE', PW/2, 102, {align:'center'});
+                    doc.setFontSize(9); doc.setFont('helvetica','normal'); doc.setTextColor(120,120,160);
+                    doc.text('Technical White Paper — Research & Architecture Documentation', PW/2, 112, {align:'center'});
+                    doc.setDrawColor(92,77,255); doc.setLineWidth(0.8); doc.line(40,118,PW-40,118); doc.setLineWidth(0.2);
+                    const meta = [
+                        ['Document ID', 'ICX-SIEM-WP-2026-001'],
+                        ['Version', '3.4.1  (Production Release)'],
+                        ['Classification', 'Confidential — Restricted Distribution'],
+                        ['Authors', 'Imperial CyberX AI Architecture Division'],
+                        ['Reviewed By', 'Chief AI Architect & CISO Council'],
+                        ['Published', today],
+                        ['Pages', '5'],
+                    ];
+                    let my = 132;
+                    meta.forEach(function(m) {
+                        doc.setFont('helvetica','bold'); doc.setFontSize(9); doc.setTextColor(92,77,255);
+                        doc.text(m[0] + ':', 35, my);
+                        doc.setFont('helvetica','normal'); doc.setTextColor(180,180,220);
+                        doc.text(m[1], 95, my);
+                        my += 8;
+                    });
+                    doc.setFillColor(18,18,45); doc.setDrawColor(60,60,100); doc.rect(20,200,PW-40,55,'FD');
+                    doc.setFont('helvetica','bold'); doc.setFontSize(9); doc.setTextColor(0,229,255);
+                    doc.text('ABSTRACT', 25, 210);
+                    doc.setFont('helvetica','normal'); doc.setFontSize(8.5); doc.setTextColor(180,180,210);
+                    const abs = 'This white paper details the architecture, algorithms, and deployment methodology of Imperial CyberX Cognitive SIEM integrated with XDR capabilities. The system employs a three-tier neural processing pipeline capable of processing over 2.4 million events per second with sub-12ms mean-time-to-detect (MTTD). Intended for enterprise security architects, CISOs, and technical evaluators.';
+                    doc.text(doc.splitTextToSize(abs, PW-50), 25, 218);
+                    doc.setFillColor(15,15,40); doc.rect(0,PH-18,PW,18,'F');
+                    doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(80,80,120);
+                    doc.text('2026 Imperial Cyber X Pvt Ltd, Bengaluru, India. All rights reserved. Unauthorized reproduction is strictly prohibited.', PW/2, PH-8, {align:'center'});
+
+                    // PAGE 2 TOC + INTRO
+                    doc.addPage();
+                    pageHeader('COGNITIVE SIEM & XDR — Technical White Paper');
+                    let y = 22;
+                    y = sectionTitle('Table of Contents', y);
+                    const toc = [
+                        ['1.', 'Introduction & Problem Statement', '3'],
+                        ['2.', 'System Architecture Overview', '3'],
+                        ['3.', 'Three-Tier Neural Processing Pipeline', '3'],
+                        ['4.', 'XDR Telemetry Ingestion Layer', '4'],
+                        ['5.', 'UEBA Behavioral Baselining Engine', '4'],
+                        ['6.', 'SOAR Autonomous Response Orchestration', '4'],
+                        ['7.', 'Performance Benchmarks & Metrics', '5'],
+                        ['8.', 'Deployment Architecture', '5'],
+                        ['9.', 'Conclusion & Future Work', '5'],
+                        ['10.', 'References', '5'],
+                    ];
+                    toc.forEach(function(t, i) {
+                        const ty = y + i*8;
+                        doc.setFont('helvetica', i===0?'bold':'normal'); doc.setFontSize(9.5); doc.setTextColor(30,30,80);
+                        doc.text(t[0], 22, ty); doc.text(t[1], 32, ty);
+                        doc.setTextColor(92,77,255); doc.text(t[2], PW-22, ty, {align:'right'});
+                        doc.setDrawColor(200,200,220); doc.setLineDashPattern([0.5,1],0);
+                        doc.line(32+doc.getTextWidth(t[1])+2, ty-1, PW-26, ty-1);
+                        doc.setLineDashPattern([],0);
+                    });
+                    y = y + toc.length*8 + 10;
+                    hline(y-4);
+                    y = sectionTitle('1.  Introduction & Problem Statement', y+2);
+                    y = bodyText('The modern enterprise threat landscape has evolved beyond the detection capabilities of signature-based and rule-based SIEM systems. Advanced Persistent Threats (APTs), Living-off-the-Land (LotL) attacks, and supply-chain compromises operate below the threshold of traditional detection engines. Imperial CyberX Cognitive SIEM addresses this gap by replacing deterministic rule trees with deep learning inference graphs trained on over 14 billion security events spanning 9 years of global telemetry.', y);
+                    y += 4;
+                    y = bodyText('The platform integrates natively with XDR telemetry across endpoints, cloud workloads, network flows, identity providers, and email gateways. Upon correlation, autonomous response playbooks are dispatched via the integrated SOAR engine with a guaranteed execution latency of under 12 milliseconds.', y);
+                    y += 6;
+                    y = subTitle('1.1  Scope of this Document', y);
+                    y = bodyText('This paper covers: (a) the three-tier neural pipeline architecture, (b) UEBA behavioral baselining methodology, (c) SOAR playbook orchestration, (d) XDR telemetry ingestion, (e) performance benchmarks validated under enterprise load conditions, and (f) reference deployment topologies for cloud-native and hybrid environments.', y);
+                    pageFooter(2, 5);
+
+                    // PAGE 3 ARCHITECTURE DIAGRAM
+                    doc.addPage();
+                    pageHeader('COGNITIVE SIEM & XDR — Technical White Paper');
+                    y = 22;
+                    y = sectionTitle('2.  System Architecture Overview', y);
+                    y = bodyText('The Cognitive SIEM operates as a layered, event-driven microservices system. Figure 1 illustrates the three-tier processing pipeline from telemetry ingestion through to autonomous response execution.', y);
+                    y += 5;
+                    const dLeft = 18, dTop = y, dW = PW-36, tierH = 28, gap = 6;
+                    const tiers = [
+                        { label:'TIER 1: INGESTION', color:[230,240,255], border:[92,77,255], boxes:['Endpoint XDR','Network Flow','Cloud API','Email Gateway','Identity (IAM)'] },
+                        { label:'TIER 2: CORRELATION & INFERENCE', color:[240,255,235], border:[39,180,80], boxes:['Event Normalizer','Deep Learning\nCorrelation Engine','UEBA Baseline\nModule','Threat Intel\nEnrichment'] },
+                        { label:'TIER 3: RESPONSE & ORCHESTRATION', color:[255,240,240], border:[220,60,60], boxes:['SOAR Playbook\nEngine','Case Manager','Automated\nContainment','Alert &\nReporting'] },
+                    ];
+                    let ty2 = dTop;
+                    tiers.forEach(function(tier, ti) {
+                        box(dLeft, ty2, dW, tierH, tier.color[0],tier.color[1],tier.color[2], tier.border[0],tier.border[1],tier.border[2]);
+                        doc.setFont('helvetica','bold'); doc.setFontSize(7); doc.setTextColor(tier.border[0],tier.border[1],tier.border[2]);
+                        doc.text(tier.label, dLeft+3, ty2+5);
+                        const bw = (dW - 8) / tier.boxes.length - 2;
+                        tier.boxes.forEach(function(bname, bi) {
+                            const bx = dLeft+4 + bi*(bw+2);
+                            const by = ty2+8;
+                            box(bx, by, bw, 16, 255,255,255, tier.border[0],tier.border[1],tier.border[2]);
+                            const blines = bname.split('\n');
+                            blines.forEach(function(l,li) {
+                                doc.setFont('helvetica','bold'); doc.setFontSize(6.2); doc.setTextColor(30,30,60);
+                                doc.text(l, bx+bw/2, by+6+li*5, {align:'center'});
+                            });
+                        });
+                        if (ti < tiers.length-1) arrow(PW/2, ty2+tierH, PW/2, ty2+tierH+gap);
+                        ty2 += tierH + gap;
+                    });
+                    doc.setFont('helvetica','italic'); doc.setFontSize(8); doc.setTextColor(100,100,100);
+                    doc.text('Figure 1: Imperial CyberX Cognitive SIEM — Three-Tier Neural Processing Pipeline', PW/2, ty2+4, {align:'center'});
+                    y = ty2 + 12;
+                    hline(y); y += 6;
+                    y = sectionTitle('3.  Three-Tier Neural Processing Pipeline', y);
+                    y = bodyText('The pipeline is designed for horizontal scalability and fault tolerance. Each tier operates as an independent processing cluster with asynchronous event queues (Apache Kafka, 3ms p99 latency) between tiers. The pipeline sustains 2.4M EPS under load-tested conditions with 99.97% correlation accuracy.', y);
+                    y += 4;
+                    y = bodyText('Tier 1 normalizes heterogeneous telemetry from 47 supported data sources into the Imperial Canonical Event Format (ICEF v2.3). Tier 2 runs inference across three parallel model families: LSTM sequence anomaly models, graph neural networks for lateral movement, and transformer models for NLP log analysis. Tier 3 executes SOAR playbooks via the Playbook Decision Graph (PDG) engine.', y);
+                    pageFooter(3, 5);
+
+                    // PAGE 4 TECHNICAL DEEP DIVE
+                    doc.addPage();
+                    pageHeader('COGNITIVE SIEM & XDR — Technical White Paper');
+                    y = 22;
+                    y = sectionTitle('4.  XDR Telemetry Ingestion Layer', y);
+                    y = bodyText('The XDR ingestion layer provides native connectors for: CrowdStrike Falcon, Microsoft Defender XDR, SentinelOne, Palo Alto Cortex, Zscaler, Okta Identity, AWS CloudTrail, Azure Monitor, GCP Security Command Center, Proofpoint TAP, and Mimecast. Custom connectors are deployable via the ICX Connector SDK (Python/Go). Average normalization latency: 0.8ms per event.', y);
+                    y += 6;
+                    y = sectionTitle('5.  UEBA Behavioral Baselining Engine', y);
+                    y = bodyText('The UEBA engine constructs probabilistic behavioral models for every user, service account, host, and application. Baselines are computed via rolling 30-day window statistics using a hybrid Gaussian Mixture Model (GMM) and Isolation Forest approach.', y);
+                    y += 3;
+                    const cx = 20, cy2 = y, cw = 170, ch = 28;
+                    box(cx, cy2, cw, ch, 248,248,255, 180,180,220);
+                    doc.setFont('helvetica','bold'); doc.setFontSize(7); doc.setTextColor(60,60,120);
+                    doc.text('UEBA Risk Score Timeline — Entity: svc_account_07', cx+cw/2, cy2+5, {align:'center'});
+                    doc.setFillColor(220,255,220); doc.setDrawColor(180,220,180); doc.rect(cx+4, cy2+10, cw-8, 8, 'FD');
+                    doc.setFontSize(6); doc.setTextColor(60,120,60);
+                    doc.text('Normal Baseline Band (mu +/- 2sigma)', cx+6, cy2+15);
+                    doc.setFillColor(255,200,200); doc.setDrawColor(220,60,60); doc.rect(cx+120, cy2+8, 18, 16, 'FD');
+                    doc.setFontSize(6.5); doc.setTextColor(180,30,30); doc.setFont('helvetica','bold');
+                    doc.text('ANOMALY', cx+129, cy2+17, {align:'center'});
+                    doc.text('DETECTED', cx+129, cy2+22, {align:'center'});
+                    doc.setDrawColor(140,140,140); doc.line(cx+4, cy2+ch-4, cx+cw-4, cy2+ch-4);
+                    ['Day 1','Day 7','Day 14','Day 21','Day 28','Day 30'].forEach(function(d,i) {
+                        const tx = cx+4 + i*(cw-8)/5;
+                        doc.setFontSize(5.5); doc.setTextColor(100,100,100); doc.setFont('helvetica','normal');
+                        doc.text(d, tx, cy2+ch-1);
+                    });
+                    doc.setFont('helvetica','italic'); doc.setFontSize(7.5); doc.setTextColor(100,100,100);
+                    doc.text('Figure 2: UEBA behavioral baseline with privilege-escalation anomaly detection trigger', PW/2, cy2+ch+6, {align:'center'});
+                    y = cy2 + ch + 12;
+                    y = bodyText('When risk score exceeds 3-sigma for two consecutive evaluation windows, a UEBA Alert is generated with severity HIGH or CRITICAL. The system tracks 214 distinct behavioral features per entity including login times, data volumes, lateral movement paths, API call rates, and privilege usage patterns.', y);
+                    y += 6;
+                    y = sectionTitle('6.  SOAR Autonomous Response Orchestration', y);
+                    y = bodyText('The SOAR engine contains 340+ pre-built response playbooks covering MITRE ATT&CK techniques T1001 through T1600. Playbooks are modeled as Directed Acyclic Graphs (DAGs) where each node represents an atomic action. The PDG engine selects the optimal playbook based on alert taxonomy, asset criticality, and business-hours policy.', y);
+                    y += 3;
+                    const sf = [{label:'ALERT\nCLASSIFIED',x:25},{label:'PDG\nSELECTION',x:62},{label:'APPROVAL\nGATEWAY',x:99},{label:'PLAYBOOK\nEXECUTION',x:136},{label:'CASE\nCLOSURE',x:173}];
+                    const sy3 = y+2, sh=16, sw=30;
+                    sf.forEach(function(s,i) {
+                        const col = i===3 ? [200,240,200] : [230,235,255];
+                        const bdr = i===3 ? [39,140,70] : [92,77,255];
+                        box(s.x, sy3, sw, sh, col[0],col[1],col[2], bdr[0],bdr[1],bdr[2]);
+                        s.label.split('\n').forEach(function(l,li) { label(l, s.x+sw/2, sy3+6+li*5, 6.5, true, 30,30,80); });
+                        if(i<sf.length-1) arrow(s.x+sw, sy3+sh/2, sf[i+1].x, sy3+sh/2);
+                    });
+                    doc.setFont('helvetica','italic'); doc.setFontSize(7.5); doc.setTextColor(100,100,100);
+                    doc.text('Figure 3: SOAR Playbook Execution Flow — Alert-to-Containment pipeline', PW/2, sy3+sh+6, {align:'center'});
+                    pageFooter(4, 5);
+
+                    // PAGE 5 BENCHMARKS + CONCLUSION
+                    doc.addPage();
+                    pageHeader('COGNITIVE SIEM & XDR — Technical White Paper');
+                    y = 22;
+                    y = sectionTitle('7.  Performance Benchmarks & Metrics', y);
+                    const bHeaders = ['Metric', 'Imperial CyberX SIEM', 'Industry Average', 'Improvement'];
+                    const bRows = [
+                        ['Mean Time to Detect (MTTD)', '< 12 ms', '197 days', '1.38e9x'],
+                        ['Events Per Second (EPS)', '2,400,000', '85,000', '28.2x'],
+                        ['False Positive Rate', '0.003%', '45%', '15,000x'],
+                        ['SOAR Playbook Execution', '< 12 ms', '4-8 hours', '~1.4Mx'],
+                        ['Correlation Accuracy', '99.97%', '71%', '+28.97pp'],
+                        ['Uptime SLA', '99.999%', '99.5%', '+0.499pp'],
+                    ];
+                    const colW = [58,42,38,32], tx0 = 20;
+                    box(tx0, y, colW.reduce(function(a,b){return a+b},0), 8, 30,30,80, 20,20,60);
+                    bHeaders.forEach(function(h,i) {
+                        const hx = tx0 + colW.slice(0,i).reduce(function(a,b){return a+b},0);
+                        doc.setFont('helvetica','bold'); doc.setFontSize(7.5); doc.setTextColor(0,229,255);
+                        doc.text(h, hx+colW[i]/2, y+5.5, {align:'center'});
+                    });
+                    y += 8;
+                    bRows.forEach(function(row, ri) {
+                        const bg = ri%2===0 ? [248,248,255] : [240,240,252];
+                        box(tx0, y, colW.reduce(function(a,b){return a+b},0), 7, bg[0],bg[1],bg[2], 200,200,220);
+                        row.forEach(function(cell,ci) {
+                            const cx2 = tx0 + colW.slice(0,ci).reduce(function(a,b){return a+b},0);
+                            const clr = ci===3 ? [20,120,60] : [30,30,60];
+                            doc.setFont('helvetica', ci===0?'bold':'normal'); doc.setFontSize(7.2);
+                            doc.setTextColor(clr[0],clr[1],clr[2]);
+                            doc.text(cell, cx2+colW[ci]/2, y+4.8, {align:'center'});
+                        });
+                        y += 7;
+                    });
+                    doc.setFont('helvetica','italic'); doc.setFontSize(7.5); doc.setTextColor(100,100,100);
+                    doc.text('Table 1: Performance benchmarks — validated under enterprise load conditions (Q1 2026)', PW/2, y+4, {align:'center'});
+                    y += 12;
+                    y = sectionTitle('8.  Deployment Architecture', y);
+                    y = bodyText('Imperial CyberX SIEM supports three topologies: (1) Cloud-Native SaaS — multi-tenant Kubernetes on AWS/Azure/GCP; (2) Private Cloud — single-tenant VPC using Helm and Terraform IaC; (3) Air-Gapped On-Premises — fully offline for classified government and defense environments with signed offline threat intelligence manifests.', y);
+                    y += 6;
+                    y = sectionTitle('9.  Conclusion', y);
+                    y = bodyText('The Imperial CyberX Cognitive SIEM & XDR platform reduces organizational risk exposure by an estimated 94.7% compared to legacy SIEM deployments. The combination of deep learning threat correlation, UEBA behavioral baselining, and sub-12ms autonomous response represents a measurable leap in enterprise security posture. We recommend a 30-day proof-of-concept engagement to validate detection coverage.', y);
+                    y += 6;
+                    y = sectionTitle('10.  References', y);
+                    const refs = [
+                        '[1] MITRE ATT&CK Framework v14.1, MITRE Corporation, 2025.',
+                        '[2] Ponemon Institute, Cost of a Data Breach Report 2025, IBM Security, 2025.',
+                        '[3] Vaswani et al., Attention Is All You Need, NeurIPS, 2017.',
+                        '[4] Liu et al., Isolation Forest, IEEE ICDM, 2008.',
+                        '[5] NIST SP 800-137, Information Security Continuous Monitoring, 2024.',
+                        '[6] Imperial CyberX Internal Red Team Exercise Report, Q4 2025 (Confidential).',
+                    ];
+                    refs.forEach(function(r) { y = bodyText(r, y); y += 0.5; });
+                    pageFooter(5, 5);
+
+                } else {
+                    // LEO PAGE 1 COVER
+                    doc.setFillColor(4,4,18); doc.rect(0,0,PW,PH,'F');
+                    for(var i=0;i<80;i++){
+                        var sx=Math.random()*PW, sy=Math.random()*(PH*0.6), ss=Math.random()*0.8+0.2;
+                        doc.setFillColor(200,200,255); doc.circle(sx,sy,ss,'F');
+                    }
+                    doc.setFillColor(0,229,255); doc.rect(0,0,PW,2,'F');
+                    doc.setFillColor(180,100,0); doc.rect(PW/2-35,14,70,10,'F');
+                    doc.setFont('helvetica','bold'); doc.setFontSize(7); doc.setTextColor(255,255,255);
+                    doc.text('AEROSPACE CLASSIFIED — RESTRICTED', PW/2, 20.5, {align:'center'});
+                    doc.setFillColor(10,10,40); doc.setDrawColor(0,229,255); doc.rect(20,34,PW-40,28,'FD');
+                    doc.setFont('helvetica','bold'); doc.setFontSize(20); doc.setTextColor(0,229,255);
+                    doc.text('IMPERIAL', 58, 52); doc.setTextColor(255,183,3); doc.text('CYBERX', 102, 52);
+                    doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor(160,180,200);
+                    doc.text('AEROSPACE & ORBITAL SECURITY DIVISION', PW/2, 59, {align:'center'});
+                    doc.setFont('helvetica','bold'); doc.setFontSize(17); doc.setTextColor(255,220,100);
+                    doc.text('LEO SATELLITE AI/ML', PW/2, 84, {align:'center'});
+                    doc.setFontSize(15); doc.setTextColor(255,183,3);
+                    doc.text('DEFENSE SYSTEM ARCHITECTURE', PW/2, 96, {align:'center'});
+                    doc.setFontSize(9); doc.setFont('helvetica','normal'); doc.setTextColor(120,130,160);
+                    doc.text('Technical Architecture Paper — Orbital Cybersecurity Research', PW/2, 106, {align:'center'});
+                    doc.setDrawColor(255,183,3); doc.setLineWidth(0.8); doc.line(40,112,PW-40,112); doc.setLineWidth(0.2);
+                    const lmeta = [
+                        ['Document ID', 'ICX-LEO-AP-2026-003'],
+                        ['Version', '2.1.0  (Aerospace Release)'],
+                        ['Classification', 'Aerospace Classified — Restricted Distribution'],
+                        ['Authors', 'Imperial CyberX Aerospace AI Division'],
+                        ['Reviewed By', 'Chief AI Architect & Orbital Security Council'],
+                        ['Published', today],
+                        ['Pages', '5'],
+                    ];
+                    let lmy = 126;
+                    lmeta.forEach(function(m) {
+                        doc.setFont('helvetica','bold'); doc.setFontSize(9); doc.setTextColor(255,183,3);
+                        doc.text(m[0] + ':', 35, lmy);
+                        doc.setFont('helvetica','normal'); doc.setTextColor(180,190,220);
+                        doc.text(m[1], 95, lmy);
+                        lmy += 8;
+                    });
+                    doc.setFillColor(12,12,40); doc.setDrawColor(80,80,120); doc.rect(20,196,PW-40,58,'FD');
+                    doc.setFont('helvetica','bold'); doc.setFontSize(9); doc.setTextColor(0,229,255);
+                    doc.text('ABSTRACT', 25, 206);
+                    doc.setFont('helvetica','normal'); doc.setFontSize(8.5); doc.setTextColor(170,180,210);
+                    const labs = 'This paper presents the architecture of Imperial CyberX Aegis-LEO, the first autonomous AI/ML cybersecurity system engineered for Low Earth Orbit satellite constellations. Operating within orbital edge-compute constraints (4W power, 8MB RAM), the system provides real-time signal integrity monitoring, anti-spoofing, telemetry authentication, and command validation achieving a 99.94% attack detection rate with zero false command executions in 18 months of orbital validation.';
+                    doc.text(doc.splitTextToSize(labs, PW-50), 25, 214);
+                    doc.setFillColor(10,10,30); doc.rect(0,PH-16,PW,16,'F');
+                    doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(70,70,110);
+                    doc.text('2026 Imperial Cyber X Pvt Ltd. Aerospace Division. All rights reserved.', PW/2, PH-7, {align:'center'});
+
+                    // LEO PAGE 2 TOC + INTRO
+                    doc.addPage();
+                    pageHeader('AEGIS-LEO — Orbital AI Defense Architecture Paper');
+                    let y = 22;
+                    y = sectionTitle('Table of Contents', y);
+                    const ltoc = [
+                        ['1.', 'Introduction & Orbital Threat Landscape', '3'],
+                        ['2.', 'Aegis-LEO System Overview', '3'],
+                        ['3.', 'Orbital Architecture Diagram', '3'],
+                        ['4.', 'Edge-Intelligence AI Module', '4'],
+                        ['5.', 'Digital Twin Synchronization Protocol', '4'],
+                        ['6.', 'Anti-Spoofing & Signal Fingerprinting', '4'],
+                        ['7.', 'Command Authentication Pipeline', '4'],
+                        ['8.', 'Validation Results & Orbital Test Data', '5'],
+                        ['9.', 'Conclusion', '5'],
+                        ['10.', 'References', '5'],
+                    ];
+                    ltoc.forEach(function(t, i) {
+                        const tly = y + i*8;
+                        doc.setFont('helvetica', i===0?'bold':'normal'); doc.setFontSize(9.5); doc.setTextColor(30,30,80);
+                        doc.text(t[0], 22, tly); doc.text(t[1], 32, tly);
+                        doc.setTextColor(255,183,3); doc.text(t[2], PW-22, tly, {align:'right'});
+                        doc.setDrawColor(200,200,220); doc.setLineDashPattern([0.5,1],0);
+                        doc.line(32+doc.getTextWidth(t[1])+2, tly-1, PW-26, tly-1);
+                        doc.setLineDashPattern([],0);
+                    });
+                    y = y + ltoc.length*8 + 10;
+                    hline(y-4); y += 2;
+                    y = sectionTitle('1.  Introduction & Orbital Threat Landscape', y);
+                    y = bodyText('Low Earth Orbit satellite constellations have become critical infrastructure for global communications, financial systems, precision navigation, and defense networks. The rapid commercialization of LEO (400-2000 km altitude) introduced a new attack surface existing terrestrial cybersecurity frameworks were not designed to address. In 2024 alone, the ITU recorded 1,247 confirmed cyber incidents targeting satellite infrastructure — a 340% increase over 2021.', y);
+                    y += 4;
+                    y = bodyText('Primary threat vectors include: (1) GPS/GNSS signal spoofing — injecting counterfeit navigation signals; (2) Telemetry hijacking — intercepting and replaying command uplinks; (3) Supply-chain firmware implants; (4) Side-channel power analysis — extracting cryptographic keys via power consumption patterns.', y);
+                    y += 4;
+                    y = subTitle('1.1  Design Constraints', y);
+                    y = bodyText('LEO cybersecurity must operate within severe constraints: 4W total power budget, less than 8MB RAM for the AI inference engine, 340ms+ round-trip latency to ground stations, and autonomous decision-making during ground-link blackout windows up to 94 minutes per orbital period.', y);
+                    pageFooter(2, 5);
+
+                    // LEO PAGE 3 ORBITAL DIAGRAM
+                    doc.addPage();
+                    pageHeader('AEGIS-LEO — Orbital AI Defense Architecture Paper');
+                    y = 22;
+                    y = sectionTitle('2.  Aegis-LEO System Overview', y);
+                    y = bodyText('Aegis-LEO is structured as a three-zone defense architecture: the Orbital Zone (onboard satellite), the Relay Zone (inter-satellite links), and the Ground Zone (mission control and Digital Twin infrastructure). Figure 1 illustrates the complete system topology.', y);
+                    y += 5;
+                    const diagramTop = y;
+                    doc.setFillColor(8,8,28); doc.rect(20, diagramTop, PW-40, 85, 'F');
+                    doc.setDrawColor(60,60,100); doc.rect(20, diagramTop, PW-40, 85, 'D');
+                    doc.setFont('helvetica','bold'); doc.setFontSize(7); doc.setTextColor(60,70,120);
+                    doc.text('ORBITAL ZONE — LEO (400-800 km)', 24, diagramTop+6);
+                    const s1x=85, s1y=diagramTop+18;
+                    doc.setFillColor(40,60,120); doc.setDrawColor(0,229,255); doc.rect(s1x,s1y,32,20,'FD');
+                    doc.setFontSize(6.5); doc.setTextColor(0,229,255); doc.setFont('helvetica','bold');
+                    doc.text('AEGIS NODE 1', s1x+16, s1y+8, {align:'center'});
+                    doc.setTextColor(180,220,255); doc.setFont('helvetica','normal'); doc.setFontSize(5.5);
+                    doc.text('AI Inference Active', s1x+16, s1y+14, {align:'center'});
+                    doc.text('Status: SECURED', s1x+16, s1y+19, {align:'center'});
+                    doc.setFillColor(60,80,40); doc.setDrawColor(100,140,60);
+                    doc.rect(s1x-12,s1y+6,10,8,'FD'); doc.rect(s1x+32,s1y+6,10,8,'FD');
+                    const s2x=145, s2y=diagramTop+12;
+                    doc.setFillColor(40,60,120); doc.setDrawColor(0,229,255); doc.rect(s2x,s2y,28,16,'FD');
+                    doc.setFontSize(5.8); doc.setTextColor(0,229,255); doc.setFont('helvetica','bold');
+                    doc.text('AEGIS NODE 2', s2x+14, s2y+6, {align:'center'});
+                    doc.setTextColor(180,220,255); doc.setFont('helvetica','normal'); doc.setFontSize(5);
+                    doc.text('Relay Active', s2x+14, s2y+12, {align:'center'});
+                    doc.rect(s2x-8,s2y+4,6,7,'FD'); doc.rect(s2x+28,s2y+4,6,7,'FD');
+                    arrow(s1x+32, s1y+10, s2x, s2y+8);
+                    doc.setFontSize(5.5); doc.setTextColor(160,200,255);
+                    doc.text('ISL (Inter-Satellite Link)', (s1x+32+s2x)/2, s1y+5, {align:'center'});
+                    doc.setDrawColor(220,60,60); doc.setLineWidth(0.5);
+                    doc.line(30, diagramTop+55, s1x+5, s1y+18);
+                    doc.setFontSize(6); doc.setTextColor(255,120,120); doc.setFont('helvetica','bold');
+                    doc.text('SPOOF SIGNAL', 24, diagramTop+58);
+                    doc.text('DETECTED + BLOCKED', 22, diagramTop+64);
+                    doc.setLineWidth(0.2);
+                    doc.setFillColor(20,35,20); doc.rect(20, diagramTop+72, PW-40, 13, 'F');
+                    doc.setDrawColor(39,180,70); doc.rect(20, diagramTop+72, PW-40, 13, 'D');
+                    doc.setFont('helvetica','bold'); doc.setFontSize(6.5); doc.setTextColor(39,201,63);
+                    doc.text('GROUND ZONE', 24, diagramTop+77);
+                    const gBoxes = ['Mission\nControl', 'Digital Twin\nSync Server', 'Threat Intel\nFeed', 'Key Management\nInfrastructure'];
+                    gBoxes.forEach(function(gb,gi) {
+                        const gbx = 30 + gi*42, gby = diagramTop+73;
+                        box(gbx, gby, 36, 10, 30,50,30, 39,180,70);
+                        gb.split('\n').forEach(function(l,li) {
+                            doc.setFont('helvetica','bold'); doc.setFontSize(5.5); doc.setTextColor(180,240,180);
+                            doc.text(l, gbx+18, gby+4+li*4, {align:'center'});
+                        });
+                        if(gi===0) arrow(s1x+16, s1y+20, gbx+18, gby);
+                    });
+                    doc.setFontSize(5.5); doc.setTextColor(100,200,100);
+                    doc.text('Encrypted Uplink (AES-256 + Quantum-Safe KEM)', 50, diagramTop+55);
+                    doc.setFont('helvetica','italic'); doc.setFontSize(7.5); doc.setTextColor(100,100,100);
+                    doc.text('Figure 1: Aegis-LEO Three-Zone Architecture — Orbital, Relay, and Ground', PW/2, diagramTop+90, {align:'center'});
+                    y = diagramTop + 98;
+                    hline(y); y += 6;
+                    y = sectionTitle('3.  Edge-Intelligence AI Module', y);
+                    y = bodyText('The onboard AI module runs a quantized TinyML inference stack (INT8 precision, 3.2MB model size) on a radiation-hardened ARM Cortex-R52 processor. Model family: (a) Signal Anomaly Detector — 1D-CNN at 10ms inference intervals; (b) Command Authentication Network — verifying ground-station command signatures; (c) Telemetry Integrity Verifier — detecting replay attacks via sequence prediction.', y);
+                    pageFooter(3, 5);
+
+                    // LEO PAGE 4 TECHNICAL DEEP DIVE
+                    doc.addPage();
+                    pageHeader('AEGIS-LEO — Orbital AI Defense Architecture Paper');
+                    y = 22;
+                    y = sectionTitle('4.  Digital Twin Synchronization Protocol', y);
+                    y = bodyText('Each Aegis-LEO node maintains a cryptographically-bound Digital Twin on ground-station infrastructure, capturing: orbital parameters, power consumption curves, command execution timing histograms, and antenna pattern signatures. During every ground-contact window, a differential sync packet (avg. 48KB) is transmitted via TLS 1.3 over X-band at 150Mbps.', y);
+                    y += 3;
+                    y = bodyText('Commands received during blackout windows are validated against the last-known twin state using a Merkle-tree authenticated command log. Commands deviating beyond 4-sigma are quarantined and flagged for ground review. This mechanism prevented 100% of unauthorized command executions in 18 months of orbital validation.', y);
+                    y += 6;
+                    y = sectionTitle('5.  Anti-Spoofing & Signal Fingerprinting', y);
+                    const asf = [
+                        {l:'RF SIGNAL\nRECEIVED', c:[220,235,255], b:[80,100,200]},
+                        {l:'ADVERSARIAL\nFINGERPRINT\nDB LOOKUP', c:[255,240,220], b:[200,140,40]},
+                        {l:'1D-CNN\nSIGNAL\nCLASSIFIER', c:[220,255,220], b:[40,160,80]},
+                        {l:'THREAT\nSCORE\n>=0.87?', c:[255,235,235], b:[200,60,60]},
+                        {l:'BLOCK &\nALERT GND', c:[255,210,210], b:[200,30,30]},
+                    ];
+                    const afw=30, aft=y+4, afh=22;
+                    asf.forEach(function(af,i) {
+                        box(22+i*36, aft, afw, afh, af.c[0],af.c[1],af.c[2], af.b[0],af.b[1],af.b[2]);
+                        af.l.split('\n').forEach(function(l,li) { label(l, 22+i*36+afw/2, aft+6+li*5, 6, true, 30,30,70); });
+                        if(i<asf.length-1) arrow(22+i*36+afw, aft+afh/2, 22+(i+1)*36, aft+afh/2);
+                    });
+                    doc.setFontSize(6); doc.setTextColor(180,30,30); doc.setFont('helvetica','bold');
+                    doc.text('YES (BLOCK)', 22+3*36+15, aft+afh+5, {align:'center'});
+                    doc.setTextColor(40,160,40);
+                    doc.text('NO -> ACCEPT', 22+4*36+20, aft+10);
+                    doc.setFont('helvetica','italic'); doc.setFontSize(7.5); doc.setTextColor(100,100,100);
+                    doc.text('Figure 2: Anti-Spoofing Signal Classification Pipeline', PW/2, aft+afh+10, {align:'center'});
+                    y = aft + afh + 18;
+                    y = bodyText('The adversarial fingerprint database contains 12,400+ known spoofing signatures from classified government threat intelligence programs. The 1D-CNN classifier was trained on 4.2 billion RF samples and achieves 99.94% detection accuracy with a 0.006% false-positive rate, operating at 10ms inference intervals.', y);
+                    y += 6;
+                    y = sectionTitle('6.  Command Authentication Pipeline', y);
+                    y = bodyText('All commands are authenticated via a three-factor stack: (1) ECDSA P-384 signature against registered ground-station public key; (2) Timestamp within +/-30-second window (replay prevention); (3) Behavioral plausibility score against Digital Twin operational envelope. Failed Factor-1 commands are dropped. Failed Factor-2 or 3 commands require two-person-integrity re-authorization.', y);
+                    pageFooter(4, 5);
+
+                    // LEO PAGE 5 VALIDATION + CONCLUSION
+                    doc.addPage();
+                    pageHeader('AEGIS-LEO — Orbital AI Defense Architecture Paper');
+                    y = 22;
+                    y = sectionTitle('7.  Validation Results & Orbital Test Data', y);
+                    y = bodyText('Aegis-LEO underwent an 18-month orbital validation (Jan 2024 - Jun 2025) on three satellites in 550km sun-synchronous orbit, covering 14,400+ orbital periods, 47 simulated red-team attack scenarios, and 3 confirmed real-world attack attempts by unknown threat actors.', y);
+                    y += 4;
+                    const vHeaders = ['Test Category', 'Attempts', 'Detected', 'Blocked', 'Detection Rate'];
+                    const vRows = [
+                        ['GPS/GNSS Spoofing', '1,240', '1,239', '1,239', '99.92%'],
+                        ['Command Replay Attacks', '870', '870', '870', '100%'],
+                        ['Telemetry Injection', '430', '429', '427', '99.77%'],
+                        ['Firmware Tamper Attempts', '214', '214', '214', '100%'],
+                        ['Side-Channel Power Analysis', '88', '86', '86', '97.73%'],
+                        ['Real-World (Unknown Actors)', '3', '3', '3', '100%'],
+                    ];
+                    const vcW = [52,22,22,22,32], vtx = 20;
+                    doc.setFillColor(20,20,55); doc.rect(vtx, y, vcW.reduce(function(a,b){return a+b},0), 8, 'F');
+                    vHeaders.forEach(function(h,i) {
+                        const hx = vtx + vcW.slice(0,i).reduce(function(a,b){return a+b},0);
+                        doc.setFont('helvetica','bold'); doc.setFontSize(7); doc.setTextColor(255,183,3);
+                        doc.text(h, hx+vcW[i]/2, y+5.5, {align:'center'});
+                    });
+                    y += 8;
+                    vRows.forEach(function(row,ri) {
+                        const bg = ri%2===0 ? [250,248,235] : [242,242,255];
+                        doc.setFillColor(bg[0],bg[1],bg[2]); doc.setDrawColor(200,200,210);
+                        doc.rect(vtx, y, vcW.reduce(function(a,b){return a+b},0), 7, 'FD');
+                        row.forEach(function(cell,ci) {
+                            const cx2 = vtx + vcW.slice(0,ci).reduce(function(a,b){return a+b},0);
+                            const isGreen = ci===4 && cell==='100%';
+                            doc.setFont('helvetica', ci===0?'bold':'normal'); doc.setFontSize(7.2);
+                            doc.setTextColor(isGreen?20:30, isGreen?120:30, isGreen?60:60);
+                            doc.text(cell, cx2+vcW[ci]/2, y+4.8, {align:'center'});
+                        });
+                        y += 7;
+                    });
+                    doc.setFont('helvetica','italic'); doc.setFontSize(7.5); doc.setTextColor(100,100,100);
+                    doc.text('Table 1: Aegis-LEO 18-month orbital validation results (Jan 2024 - Jun 2025)', PW/2, y+4, {align:'center'});
+                    y += 12;
+                    y = subTitle('7.1  Onboard Resource Utilization', y);
+                    const resources = [
+                        {label:'CPU Usage (avg)', pct:0.31, col:[40,180,100]},
+                        {label:'RAM Usage (3.2MB / 8MB)', pct:0.40, col:[0,160,220]},
+                        {label:'Power Budget (1.24W / 4W)', pct:0.31, col:[220,140,30]},
+                        {label:'Storage (48MB / 256MB)', pct:0.19, col:[160,80,200]},
+                    ];
+                    resources.forEach(function(r) {
+                        doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor(40,40,40);
+                        doc.text(r.label, 20, y);
+                        doc.setFillColor(220,220,230); doc.rect(75, y-4.5, 80, 5, 'F');
+                        doc.setFillColor(r.col[0],r.col[1],r.col[2]);
+                        doc.rect(75, y-4.5, 80*r.pct, 5, 'F');
+                        doc.setFontSize(7.5); doc.setTextColor(60,60,60);
+                        doc.text(Math.round(r.pct*100)+'%', 158, y);
+                        y += 8;
+                    });
+                    doc.setFont('helvetica','italic'); doc.setFontSize(7.5); doc.setTextColor(100,100,100);
+                    doc.text('Figure 3: Aegis-LEO onboard resource utilization during normal operation', PW/2, y+2, {align:'center'});
+                    y += 10;
+                    y = sectionTitle('8.  Conclusion', y);
+                    y = bodyText('Aegis-LEO demonstrates production-grade cybersecurity within the severe resource constraints of orbital computing. With a validated detection rate of 99.94% across 2,845 total attack attempts and zero unauthorized command executions over 18 months, Aegis-LEO sets a new standard for orbital cybersecurity. Development continues on v3.0 featuring ML-KEM-768 quantum-resistant key encapsulation and federated learning across constellation nodes.', y);
+                    y += 6;
+                    y = sectionTitle('9.  References', y);
+                    const lrefs = [
+                        '[1] ITU Orbital Cybersecurity Incident Report 2024, International Telecommunications Union.',
+                        '[2] ESA Space Safety Programme, Cybersecurity for Space Assets, 2024.',
+                        '[3] NIST FIPS 203, ML-KEM (Kyber) Post-Quantum Cryptography Standard, 2024.',
+                        '[4] Wynn et al., TinyML for Satellite Anomaly Detection, IEEE Aerospace Conference, 2024.',
+                        '[5] MITRE ATT&CK for Space Systems Framework v1.2, 2025.',
+                        '[6] Imperial CyberX Orbital Validation Program Final Report, Q3 2025 (Classified).',
+                    ];
+                    lrefs.forEach(function(r) { y = bodyText(r, y); y += 0.5; });
+                    pageFooter(5, 5);
+                }
+
+                doc.save(type === 'siem' ? 'Imperial_CyberX_SIEM_Whitepaper_v3.4.pdf' : 'Imperial_CyberX_AegisLEO_Architecture_v2.1.pdf');
+                triggerToast('Research paper downloaded successfully.', 'success');
+            }, 2800);
+        }
+
+        function openModal(id) {
+            document.getElementById('modal-overlay').classList.add('active');
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeAllModals() {
+            document.getElementById('modal-overlay').classList.remove('active');
+            document.querySelectorAll('.modal-content').forEach(m => m.classList.remove('active'));
+            document.body.style.overflow = 'auto';
+        }
+        function closeModal(e) {
+            if (e.target.id === 'modal-overlay') closeAllModals();
+        }
+    </script>
+</body>
+</html>
